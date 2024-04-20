@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "30df7887-c6f3-485f-857a-0bd1e9b7cc4b",
+		"name": "Spring2.3-MongoDb-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33936986"
+	},
+	"item": [
+		{
+			"name": "add-employee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"department\": \"Development\",\r\n  \"empId\": \"25639\",\r\n  \"firstName\": \"Alex\",\r\n  \"lastName\": \"He\",\r\n  \"location\": \"Toronot\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2023/employees"
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:2023/employees"
+			},
+			"response": []
+		},
+		{
+			"name": "update-employees",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"department\": \"Security\",\r\n  \"empId\": \"25639\",\r\n  \"firstName\": \"Alex\",\r\n  \"lastName\": \"He\",\r\n  \"location\": \"Bramton\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2023/employees"
+			},
+			"response": []
+		},
+		{
+			"name": "remove-employees-by-id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2023/employees/25639"
+			},
+			"response": []
+		}
+	]
+}
